@@ -1,0 +1,96 @@
+:root {
+  --primary-color: #8B0000;    /* Rojo oscuro para librería */
+  --secondary-color: #f5f5f5;  /* Gris muy claro */
+  --text-light: #fff;
+  --text-dark: #333;
+  --text-muted: #666;
+  --bg-light: #fff;           /* Fondo blanco simple */
+}
+
+.landing {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.landing__content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #fff; 
+  border-radius: 8px;
+}
+
+/* Título y subtítulo */
+.landing__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.landing__subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--text-dark);
+}
+
+/* Información y contador */
+.landing__info {
+  background-color: #f5f5f5;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.landing__info p {
+  margin: 0.5rem 0;
+  color: var(--text-dark);
+}
+
+.landing__countdown {
+  margin: 1rem 0;
+}
+
+.landing__timer {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0.5rem 0;
+}
+
+/* Botón */
+.landing__button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  margin-top: 1rem;
+}
+
+.landing__button:hover {
+  background-color: #700000;  /* Versión más oscura */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .landing__content {
+    padding: 1.5rem;
+  }
+  
+  .landing__title {
+    font-size: 2rem;
+  }
+  
+  .landing__timer {
+    font-size: 3rem;
+  }
+}

@@ -1,0 +1,43 @@
+/* book-list.css - Modificado para 2 columnas */
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.book-list-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.book-list-title {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--dark-text);
+  text-align: center;
+}
+
+.book-list-empty {
+  text-align: center;
+  padding: 3rem 0;
+  color: #777;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .book-list {
+    grid-template-columns: 1fr; /* 1 columna en móviles */
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .book-list {
+    grid-template-columns: repeat(2, 1fr); /* Mantener 2 columnas incluso en pantallas grandes */
+  }
+  
+}
