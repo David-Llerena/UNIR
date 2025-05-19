@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import books from '../data/books.js'; // Ajusta la ruta si es necesario
-import '../styles/components/homePage.css';
+// import '../styles/components/homePage.css';
 import storeImg from '../img/store.png';
 
 function HomePage({ cart }) {
